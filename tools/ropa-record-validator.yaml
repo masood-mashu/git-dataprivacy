@@ -1,14 +1,18 @@
-name: "ropa-record-validator"
+name: ropa-record-validator
+version: 1.0.0
 description: "Validates mandatory GDPR Article 30 required fields in processing activity record"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "ropa_record_validator.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     ropa_entry_json:
-      type: "string"
+      type: string
       description: "JSON with purpose, data_categories, recipients, lawful_basis"
   required:
-    - "ropa_entry_json"
+    - ropa_entry_json
+implementation:
+  type: script
+  path: ropa_record_validator.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

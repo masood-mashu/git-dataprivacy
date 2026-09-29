@@ -1,10 +1,15 @@
-# Skill: Gdpr Article 30 Governance
+---
+name: gdpr-article-30-governance
+description: Records of processing activities creation and audit standards
+---
 
-## Description
+# Gdpr Article 30 Governance
+
+## Overview
 Records of processing activities creation and audit standards.
 
-## Procedural Workflow
-1. Ingest relevant parameters from repository state.
-2. Execute deterministic analysis via `GitDataPrivacy` registered tools.
-3. Validate output against compliance rules in `RULES.md`.
-4. Return structured status dictionary to calling runtime.
+## Procedure
+1. Ingest input manifest or configuration artifact.
+2. Execute automated deterministic verification checks.
+3. Compare findings against predefined compliance policies.
+4. Record findings and sign the audit manifest.
