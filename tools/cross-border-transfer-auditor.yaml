@@ -1,0 +1,14 @@
+name: "cross-border-transfer-auditor"
+description: "Verifies adequacy decision or executed SCC agreement for international transfers"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "cross_border_transfer_auditor.py"
+parameters:
+  type: "object"
+  properties:
+    transfer_json:
+      type: "string"
+      description: "JSON with destination_country and has_scc_executed"
+  required:
+    - "transfer_json"

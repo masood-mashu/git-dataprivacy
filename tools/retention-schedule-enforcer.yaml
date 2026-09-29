@@ -1,0 +1,14 @@
+name: "retention-schedule-enforcer"
+description: "Flags records exceeding lawful maximum retention duration in days"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "retention_schedule_enforcer.py"
+parameters:
+  type: "object"
+  properties:
+    asset_retention_json:
+      type: "string"
+      description: "JSON with age_days and max_allowed_days"
+  required:
+    - "asset_retention_json"

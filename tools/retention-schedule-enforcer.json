@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "enforce_retention_schedule",
+  "description": "Flags records exceeding lawful maximum retention duration in days",
+  "type": "object",
+  "properties": {
+    "asset_retention_json": {
+      "type": "string",
+      "description": "JSON with age_days and max_allowed_days"
+    }
+  },
+  "required": [
+    "asset_retention_json"
+  ]
+}

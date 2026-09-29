@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-dataprivacy"
+version: "0.1.0"
+description: "Autonomous GDPR Article 30 RoPA Auditor, Data Retention Enforcer & SCC Compliance Agent"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - legal
+  - gdpr-compliance
+  - data-privacy
+  - ropa-audit
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-dataprivacy-01"
+  passport_category: "Legal"

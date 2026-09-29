@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "audit_cross_border_transfer",
+  "description": "Verifies adequacy decision or executed SCC agreement for international transfers",
+  "type": "object",
+  "properties": {
+    "transfer_json": {
+      "type": "string",
+      "description": "JSON with destination_country and has_scc_executed"
+    }
+  },
+  "required": [
+    "transfer_json"
+  ]
+}
